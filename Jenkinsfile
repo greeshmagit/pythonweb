@@ -37,10 +37,10 @@ pipeline{
             echo 'Pipeline complete'
         }
         success {
-                    'Deployment successful'
+            echo 'Deployment successful'
         }
         failure {
-                    'Deployment failed'
+            echo 'Deployment failed'
         }
 }
 }
