@@ -31,7 +31,8 @@ pipeline{
             }
          }
     }
-    post {
+  }
+  post {
         always {
             echo 'Pipeline complete'
         }
@@ -41,6 +42,5 @@ pipeline{
         failure {
                   message: 'Deployment failed'
         }
-    }
-  }
+}
 }
