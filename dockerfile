@@ -5,4 +5,4 @@ COPY python_web.py .
 
 EXPOSE 8000
 
-CMD ["python", "server.py"]
+CMD ["python3", "python_web.py"]
