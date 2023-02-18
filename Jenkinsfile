@@ -27,7 +27,7 @@ pipeline{
                          sh "ssh -o StrictHostkeyChecking=no ec2-user@172.31.34.138 docker rm -f hellopython"
                          sh "ssh -o StrictHostkeyChecking=no ec2-user@172.31.34.138 docker rmi -f pgreeshma/pythonweb:v1"
                          sh "ssh -o StrictHostkeyChecking=no ec2-user@172.31.34.138 docker image prune -a -f"   
-                         sh "ssh -o StrictHostkeyChecking=no ec2-user@172.31.34.138 docker run -d -p 8000:5000 --name hellopython pgreeshma/pythonweb:v1"
+                         sh "ssh -o StrictHostkeyChecking=no ec2-user@172.31.34.138 docker run -d -p 8081:5000 --name hellopython pgreeshma/pythonweb:v1"
             }
          }
     }
