@@ -1,6 +1,6 @@
 //FROM python:3.8-slim-buster
-FROM python:alpine3.10
-ENV app /usr/bin/src/webapp/pythonweb
+FROM python:alpine3.9
+//ENV app /usr/bin/src/webapp/pythonweb
 WORKDIR /app
 COPY python_web.py .
 COPY requirements.txt .
