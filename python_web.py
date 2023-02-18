@@ -8,7 +8,7 @@ class HelloHandler(BaseHTTPRequestHandler):
         self.wfile.write(b'Hello World')
 
 if __name__ == '__main__':
-    server_address = ('', 8000)
+    server_address = ('3.6.87.135', 8000)
     httpd = HTTPServer(server_address, HelloHandler)
     print('Starting server...')
     httpd.serve_forever()
