@@ -1,6 +1,5 @@
-'''
 from http.server import HTTPServer, BaseHTTPRequestHandler
-
+'''
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
@@ -14,5 +13,14 @@ if __name__ == '__main__':
     print('Starting server...')
     httpd.serve_forever()
 '''
-print("Helloworld")
+def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
+    server_address = ('0.0.0.0', 8000)
+    httpd = server_class(server_address, handler_class)
+    print("Hello world")
+    httpd.serve_forever()
+    
+if __name__ == '__main__':
+    run()
+
+
 
