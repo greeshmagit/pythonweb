@@ -6,6 +6,4 @@ COPY requirements.txt .
 
 RUN pip3 install --upgrade pip --no-cache-dir -r requirements.txt
 
-EXPOSE 8000
-
 CMD ["python3", "python_web.py"]
