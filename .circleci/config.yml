@@ -8,6 +8,6 @@ jobs:
       - run: python python_web.py
       
 workflows:
-  test_and_build:
+  build:
     jobs:
       - build
