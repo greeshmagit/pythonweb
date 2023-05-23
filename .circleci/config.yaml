@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.11.3
+    steps:
+      - checkout
+      - run: python python_web.py
+      
+workflows:
+  test_and_build:
+    jobs:
+      - build
